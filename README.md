@@ -26,6 +26,6 @@ https://developer.android.com/studio
 
 5.เลือก ปุ่ม ที่ต้องการจะเปิด/ปิดไฟ
 
-ดัง Link ตัวอย่างนี้
+ดัง Vedio Link ตัวอย่างนี้
 
 https://drive.google.com/drive/folders/1BOkBXsi7YW01aNaASGlDYGo39WGv1CPU?fbclid=IwAR00pwZIbsirDWJAZvUrwkZ2AaF2u1AE7OSIqmoGa5Ul4mS7o_fgRujfEEs
