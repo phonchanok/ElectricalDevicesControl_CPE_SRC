@@ -12,7 +12,8 @@
 
 1.Android studio https://developer.android.com/studio
 
-2.arduino (พร้อมโหลด microgear esp32) https://www.arduino.cc/en/main/software , https://github.com/netpiemaker/microgear-esp32-arduino
+2.Arduino (พร้อมโหลด microgear esp32) https://www.arduino.cc/en/main/software , https://github.com/netpiemaker/microgear-esp32-arduino
 
-วิธีการใช้งานโปรแกรม
+วิธีการทำงานของ App EDC
 
+https://drive.google.com/drive/folders/1BOkBXsi7YW01aNaASGlDYGo39WGv1CPU?usp=sharing
