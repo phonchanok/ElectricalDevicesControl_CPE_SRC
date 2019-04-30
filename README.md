@@ -18,9 +18,9 @@ https://developer.android.com/studio
 
 1.หลังจากที่ดาวน์โหลด โปรแกรม และ ติดตั้ง โปรแกรมข้างต้นหมดแล้ว 
 
-2.ทำการเปิดโปรแกรม Android Studio จากนั้นให้ open file ใน folder ElectricalDevicesControl_CPE_SRC ในไฟล์ที่มีชื่อว่า EDC
+2.ทำการเปิดโปรแกรม Android Studio จากนั้นให้ open file ใน folder ElectricalDevicesControl_CPE_SRC เลือกไฟล์ที่มีชื่อว่า EDC
 
-3.ทำการเปิดไฟล์ ใน folder ElectricalDevicesControl_CPE_SRC ในไฟล์ที่มีชื่อว่า Basic.io
+3.ทำการเปิดไฟล์ ใน folder ElectricalDevicesControl_CPE_SRC เลือก folderที่มีชื่อว่า Hardware จากนั้น เลือกไฟล์ที่มีชื่อว่า ฺBasic.io
 
 4.เมื่อเปิดไฟล์แล้วให้ทำการ runcode แล้วจะขึ้นหน้าโปรแกรม
 
