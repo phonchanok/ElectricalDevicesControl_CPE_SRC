@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private Button toggleButton3;
     private Button toggleButton4;
     private Button toggleButton5;
+    private boolean toggleButton2State = false;
+    private boolean toggleButton3State = false;
+    private boolean toggleButton4State = false;
+    private boolean toggleButton5State = false;
 
     Handler handler = new Handler() {
         @Override
@@ -46,7 +50,16 @@ public class MainActivity extends AppCompatActivity {
         toggleButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                microgear.chat("esp32_node1", "On");
+                if(toggleButton2State)
+                {
+                    microgear.chat("esp32_node1", "On1");
+                }
+                else
+                {
+                    microgear.chat("esp32_node1", "Off1");
+                }
+
+                toggleButton2State=!toggleButton2State;
 
             }
 
@@ -55,21 +68,48 @@ public class MainActivity extends AppCompatActivity {
         toggleButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                microgear.chat("esp32_node1", "Off");
+                if(toggleButton3State)
+                {
+                    microgear.chat("esp32_node1", "On2");
+                }
+                else
+                {
+                    microgear.chat("esp32_node1", "Off2");
+                }
+
+                toggleButton3State=!toggleButton3State;
             }
         });
         toggleButton4 = findViewById(R.id.toggleButton4);
         toggleButton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                microgear.chat("esp32_node1", "On");
+                if(toggleButton4State)
+                {
+                    microgear.chat("esp32_node1", "On3");
+                }
+                else
+                {
+                    microgear.chat("esp32_node1", "Off3");
+                }
+
+                toggleButton4State=!toggleButton4State;
             }
         });
         toggleButton5 = findViewById(R.id.toggleButton5);
         toggleButton5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                microgear.chat("esp32_node1", "Off");
+                if(toggleButton5State)
+                {
+                    microgear.chat("esp32_node1", "On4");
+                }
+                else
+                {
+                    microgear.chat("esp32_node1", "Off4");
+                }
+
+                toggleButton5State=!toggleButton5State;
             }
         });
     }

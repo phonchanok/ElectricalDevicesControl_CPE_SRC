@@ -9,26 +9,60 @@ const char* password = "0983264147";
 #define SECRET  "LS3EzlrIeGAmElEw5bF1xIocC"
 #define ALIAS   "esp32_node1"
 #define LEDPIN   16
-
 WiFiClient client;
 int timer = 0;
 int ledState = LOW;
+int ledState1 = LOW; 
+int ledState2 = LOW; 
+int ledState3 = LOW; 
+int ledState4 = LOW;
 MicroGear microgear(client);
 
 /* If a new message arrives, do this */
 void onMsghandler(char *topic, uint8_t* msg, unsigned int msglen) {
   Serial.print("Incoming message --> ");
   msg[msglen] = '\0';
-  Serial.println((char *)msg);
+  Serial.print('#');
+  Serial.print((char *)msg);
   String strMsg = (char *)msg;
-  if (strMsg=="On")
+  Serial.println('#');
+  
+  if (strMsg=="On1")
   {
-    ledState = LOW; 
+    ledState1 = LOW; 
   }
-  else if (strMsg=="Off")
+  else if (strMsg=="Off1")
   {
-    ledState = HIGH;
+    ledState1 = HIGH; 
   }
+  else if (strMsg=="On2")
+  {
+    ledState2 = LOW ;  
+    
+  }
+  else if (strMsg=="Off2")
+  {
+    ledState2 = HIGH; 
+  }
+  else if (strMsg=="On3")
+  {
+    ledState3 = LOW; 
+     
+  }
+  else if (strMsg=="Off3")
+  {
+    ledState3 = HIGH; 
+  }
+  else if (strMsg=="On4")
+  {
+    ledState4 = LOW; 
+     
+  }else if (strMsg=="Off4")
+  {
+    ledState4 = HIGH;
+    
+  }
+
 }
 
 void onFoundgear(char *attribute, uint8_t* msg, unsigned int msglen) {
@@ -89,8 +123,11 @@ void setup() {
 
   /* connect to NETPIE to a specific APPID */
   microgear.connect(APPID);
-
-  pinMode(LEDPIN, OUTPUT);
+  
+  pinMode(0, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(15, OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
@@ -118,5 +155,10 @@ void loop() {
     }
     else timer += 100;
   }
+
+  digitalWrite(0, ledState1);
+  digitalWrite(2, ledState2);
+  digitalWrite(15, ledState3);
+  digitalWrite(13   , ledState4);
   delay(100);
 }
