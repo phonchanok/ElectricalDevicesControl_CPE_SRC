@@ -18,14 +18,14 @@ https://developer.android.com/studio
 
 1.หลังจากที่ดาวน์โหลด โปรแกรม และ ติดตั้ง โปรแกรมข้างต้นหมดแล้ว 
 
-2.ทำการเปิดโปรแกรม จาก folder detection ในไฟล์ที่มีชื่อว่า objectdetection3
+2.ทำการเปิดโปรแกรม Android Studio จากนั้นให้ open file ใน folder ElectricalDevicesControl_CPE_SRC ในไฟล์ที่มีชื่อว่า EDC
 
-3.เมื่อเปิดไฟล์แล้วให้ทำการ runcode แล้วจะขึ้นหน้าโปรแกรม
+3.ทำการเปิดไฟล์ ใน folder ElectricalDevicesControl_CPE_SRC ในไฟล์ที่มีชื่อว่า Basic.io
 
-4.เลือก model และ ประเภท ที่ต้องการ detect แล้วกดปุ่ม START
+4.เมื่อเปิดไฟล์แล้วให้ทำการ runcode แล้วจะขึ้นหน้าโปรแกรม
 
-5.หากต้องการ Capture หน้าจอการ detect ให้กดที่ปุ่ม Capture แล้วโปรแกรมจะแสดงรูปทางด้านขวาของโปรแกรม
+5.เลือก ปุ่ม ที่ต้องการจะเปิด/ปิดไฟ
 
-6.เมื่อต้องการหยุดการ detect ของโปรแกรม ให้กดปุ่ม STOP
+ดัง Link ตัวอย่างนี้
 
-ดังตัวอย่างด้านล่างนี้
+https://drive.google.com/drive/folders/1BOkBXsi7YW01aNaASGlDYGo39WGv1CPU?fbclid=IwAR00pwZIbsirDWJAZvUrwkZ2AaF2u1AE7OSIqmoGa5Ul4mS7o_fgRujfEEs
